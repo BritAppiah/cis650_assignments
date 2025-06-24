@@ -1,7 +1,9 @@
 #Modify this code so that it will reject non-positive inputs for age
 name = input('What is your name?')
 age  = int(input('What is your age?'))
-if name == 'Alice':
+if age <= 0:
+    print('Age must be positive number')
+elif name == 'Alice':
     print('Hi, Alice.')
 elif age < 12:
     print('You are not Alice, kiddo.')
@@ -13,4 +15,5 @@ else:
     print('You are not over the hill')
 
 #git commit -m 'updated 01_age_test' and then
-#git push
+#git push.
+ 
