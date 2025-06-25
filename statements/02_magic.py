@@ -5,7 +5,7 @@ def getAnswer(answerNumber):
         case 1:
             return 'It is certain'
         case 2:
-            return 'It is decidely so'
+            return 'It is decidedly so'
         case 3:
             return 'Yes'
         case 4:
