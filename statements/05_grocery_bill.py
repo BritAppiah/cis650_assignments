@@ -20,13 +20,13 @@ while items_count < num_items:
 
     items_output += f"{items_count}. {item_name}: ${item_price:.2f}\n"
 
-print(seperator)
-print("Grocery Bill Summary")
+print("\n" + seperator)
+print("Grocery Bill Summary".center(40))
 print(seperator)
 print(items_output)
 print(seperator)
 print(f"Total number of items: {items_count}")
-print(f"Total price: ${total_price:.2f}")
+print(f"TOTAL PRICE: ${total_price:.2f}")
 print(seperator)
 print("Thank you for using the Grocery Bill Calculator!")
 
