@@ -11,15 +11,12 @@ seperator = "-" * 40
 print("Welcome to the Grocery Bill Calculator")
 print(seperator)   
 num_items = int(input("Enter the number of items: "))
-
 while items_count < num_items:
     items_count += 1
     item_name = input(f"Enter the name of item {items_count}: ")
     item_price = float(input(f"Enter the price of {item_name}: $"))
     total_price += item_price
-
     items_output += f"{items_count}. {item_name}: ${item_price:.2f}\n"
-
 print("\n" + seperator)
 print("Grocery Bill Summary".center(40))
 print(seperator)
@@ -29,9 +26,6 @@ print(f"Total number of items: {items_count}")
 print(f"TOTAL PRICE: ${total_price:.2f}")
 print(seperator)
 print("Thank you for using the Grocery Bill Calculator!")
-
-
-
 
 #git commit -m 'updated 05_grocery_bill' and then
 #git push
