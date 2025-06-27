@@ -9,7 +9,7 @@ print(f'Numbers between 1 and 100 that are evenly divisible by {divisor}:')
 for number in range(1, 101):
     if number % divisor == 0:
         print(number, end=' ')
-        count += 1
+        count += 1 
 print(f'\nTotal numbers divisible by {divisor}: {count}') 
 
 # git push the changes with message '03_numbers'
