@@ -20,8 +20,6 @@ def getAnswer(answerNumber):
             return 'Outlook not so good'
         case 9:
             return 'Very doubtful'
-
-
 question=  input('What do you want to know about the future?')
 r = random.randint(1, 9)
 fortune = getAnswer(r)
