@@ -10,20 +10,15 @@
 attempts = 0
 max_attempts = 5
 while attempts < max_attempts:
-    
         income = float(input('Enter your income: $'))
         if income < 0:
             print('Income must be a non-negative number.')
             continue
-        
         status = input('Enter your filing status (Single, Married Filing Jointly, Head Of Household): ').lower()
-        
         if status not in ['single', 'married filing jointly', 'head of household']:
             print('Invalid filing status. Please enter one of the following: Single, Married Filing Jointly, Head Of Household')
             continue
-
         tax_bracket = 0
-
         if status == 'single':
             if income <= 11600:
                 tax_bracket = '10%'
@@ -39,7 +34,6 @@ while attempts < max_attempts:
                 tax_bracket = '35%'
             else:
                 tax_bracket = '37%'
-        
         elif status == 'married filing jointly':
             if income <= 23200:
                 tax_bracket = '10%'
@@ -55,7 +49,6 @@ while attempts < max_attempts:
                 tax_bracket = '35%'
             else:
                 tax_bracket = '37%'
-
         elif status == 'head of household':
             if income <= 16550:
                 tax_bracket = '10%'
@@ -71,23 +64,18 @@ while attempts < max_attempts:
                 tax_bracket = '35%'
             else:
                 tax_bracket = '37%'
-
         else: 
             print('Invalid filing status. Please enter one of the following: Single, Married Filing Jointly, Head Of Household')
             attempts += 1
             continue
-
         print(f'Your tax bracket is: {tax_bracket}%')
-
         try_again = input('Do you want to try again? (yes/no): ').lower()
         if try_again != 'yes':
             print('Thank you for using the tax bracket calculator.')
             break
-
         attempts += 1
         print('Thank you for using the tax bracket calculator!')
        
-
 #git commit -m 'updated 04_tax_brackets' and then
 #git push
 
